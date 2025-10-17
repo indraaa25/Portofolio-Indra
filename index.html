@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Indra Maulana | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body {
+        background: radial-gradient(circle at top left, #2e026d, #0f0f1f, #000);
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        }
+        .glass {
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(15px);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        .glow {
+        box-shadow: 0 0 15px rgba(139, 92, 246, 0.6);
+        }
+    </style>
+</head>
+    <body class="overflow-x-hidden">
+
+    <!-- Navbar -->
+    <header class="fixed top-0 left-0 w-full glass z-50">
+        <div class="flex justify-between items-center px-6 py-4">
+        <h1 class="text-xl font-extrabold text-purple-400">
+            Indra Maulana
+        </h1>
+        <button id="menu-btn" class="md:hidden text-white focus:outline-none">
+            <!-- ikon hamburger -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+        </button>
+        <nav id="menu" class="hidden md:flex space-x-6 text-white">
+            <a href="#home" class="hover:text-purple-300 transition">Beranda</a>
+            <a href="#about" class="hover:text-purple-300 transition">Tentang</a>
+            <a href="#skills" class="hover:text-purple-300 transition">Keahlian</a>
+            <a href="#portfolio" class="hover:text-purple-300 transition">Portofolio</a>
+            <a href="#contact" class="hover:text-purple-300 transition">Kontak</a>
+        </nav>
+        </div>
+        <!-- menu mobile -->
+        <div id="mobile-menu" class="hidden flex-col md:hidden bg-black bg-opacity-70 text-center">
+        <a href="#home" class="py-3 block hover:bg-purple-600">Beranda</a>
+        <a href="#about" class="py-3 block hover:bg-purple-600">Tentang</a>
+        <a href="#skills" class="py-3 block hover:bg-purple-600">Keahlian</a>
+        <a href="#portfolio" class="py-3 block hover:bg-purple-600">Portofolio</a>
+        <a href="#contact" class="py-3 block hover:bg-purple-600">Kontak</a>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-24">
+        <div class="glass p-8 md:p-12 rounded-3xl glow max-w-2xl">
+        <img src="images/3.jpeg" alt="Profil" class="w-32 h-32 rounded-full object-cover mx-auto border-4 border-purple-400">
+        <h2 class="text-3xl md:text-5xl font-bold mb-3">Halo, Saya <span class="text-purple-400">Indra Maulana</span></h2>
+        <p class="text-gray-200 text-base md:text-lg max-w-xl mx-auto mb-6">
+            Saya seorang Web Developer yang menciptakan pengalaman digital realistis dan modern dengan sentuhan desain futuristik.
+        </p>
+        <div class="mt-6 text-center">
+        <!-- <a href="/assets/portfolio.pdf" download class="inline-block bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-3 rounded-full font-semibold hover:scale-105 transform transition">
+            📄 Download Portofolio
+        </a><-->
+        </div>
+        </div>
+    </section>
+
+    <!-- Tentang Saya -->
+    <section id="about" class="py-24 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl font-bold text-purple-300 mb-8">Tentang Saya</h2>
+        <div class="glass p-8 rounded-3xl">
+            <p class="text-gray-200 leading-relaxed text-base md:text-lg">
+                Saya Indra Maulana siswa SMKN 1 KAWALI dengan memiliki minat dalam pengembangan perangkat lunak. Saya selalu bersemangat untuk belajar hal baru, beradaptasi dengan hal terbaru, dan bekerja sama dalam tim untuk mencapai hasil terbaik.
+            </p>
+            <div class="mt-10 bg-purple-900/30 backdrop-blur-md p-6 rounded-2xl shadow-lg border border-purple-700">
+                <h3 class="text-2xl font-semibold text-purple-300 mb-4">Pendidikan</h3>
+                <ul class="text-left space-y-3 text-gray-200">
+                    <li>
+                        <span class="font-semibold text-white">SMKN 1 Kawali</span> — Rekayasa Perangkat Lunak (Lulusan 2026)
+                    </li>
+                    <li>
+                        <span class="font-semibold text-white">SMPN 2 Panjalu </span> — (Lulusan 2023)
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Organisasi -->
+                <div class="mt-10 bg-purple-900/30 backdrop-blur-md p-6 rounded-2xl shadow-lg border border-purple-700 text-left">
+                    <h3 class="text-2xl font-semibold text-purple-300 mb-4 text-center">Organisasi</h3>
+                    <ul class="space-y-3 text-gray-200">
+                        <li><span class="font-semibold text-white">EXIT</span> — Anggota PJUP (2023–2024)</li>
+                        <li><span class="font-semibold text-white">Pramuka SMP</span> — Aktif dalam kegiatan dan pernah mengikuti LT tingkat Kecamatan</li>
+                        <li><span class="font-semibold text-white">Paskibra SMP</span> — Aktif dalam kegiatan dan pernah mengibarkan di tingkat Desa</li>
+                        <li><span class="font-semibold text-white">Pramuka SMP</span> — Aktif dalam kegiatan dan pernah mengikuti LT tingkat Kecamatan</li>
+                        <li><span class="font-semibold text-white">Anggota OSIS SMP</span> — Aktif dalam kegiatan dan pernah menyalonkan menjadi ketua OSIS</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Keahlian -->
+    <section id="skills" class="py-24 px-6">
+        <div class="max-w-6xl mx-auto text-center">
+        <h2 class="text-3xl font-bold text-purple-300 mb-12">Keahlian</h2>
+            <p class="text-lg text-gray-200 mb-10 leading-relaxed">
+            Saya memiliki kemampuan di bidang pengembangan web modern,
+            mulai dari pembuatan tampilan responsif hingga pengelolaan data menggunakan framework.
+            Fokus saya adalah menciptakan antarmuka yang interaktif, cepat, dan mudah digunakan oleh pengguna.
+        </p>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="glass p-6 rounded-2xl hover:scale-105 transform transition glow">
+            <h3 class="text-xl font-semibold text-purple-400 mb-2">Frontend Developer</h3>
+            <p class="text-gray-300">HTML, CSS, TailwindCSS, JavaScript.</p>
+            </div>
+            <div class="glass p-6 rounded-2xl hover:scale-105 transform transition glow">
+            <h3 class="text-xl font-semibold text-purple-400 mb-2">Backend Developer</h3>
+            <p class="text-gray-300">PHP, Laravel, MySQL, API.</p>
+            </div>
+            <div class="glass p-6 rounded-2xl hover:scale-105 transform transition glow">
+            <h3 class="text-xl font-semibold text-purple-400 mb-2">UI/UX Designer</h3>
+            <p class="text-gray-300">Figma</p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Portofolio -->
+    <section id="portfolio" class="py-24 px-6 bg-transparent">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-purple-300 mb-12">Portofolio</h2>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="glass rounded-3xl overflow-hidden hover:scale-105 transform transition glow">
+                    <img src="images/3.jpeg" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
+                        <h3 class="text-xl font-semibold text-purple-400">PT Inovindo Digital Media</h3>
+                        <p class="text-gray-300 mt-2 text-sm">Magang / PKL sebagai Web Developer Pemula (5 Bulan).
+                        Terlibat dalam pembuatan website perusahaan dengan menggunakan HTML, CSS, JavaScript, dan Laravel</p>
+                    </div>
+                </div>
+                <div class="glass rounded-3xl overflow-hidden hover:scale-105 transform transition glow">
+                    <img src="images/5.jpg" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
+                        <h3 class="text-xl font-semibold text-purple-400">Ujikom</h3>
+                        <p class="text-gray-300 mt-2 text-sm">Saya telah mengikuti UJIKOM di SMKN 1 Kawali, jurusan Rekayasa Perangkat Lunak, sebagai penilaian akhir kompetensi keahlian.</p>
+                    </div>
+                </div>
+                <div class="glass rounded-3xl overflow-hidden hover:scale-105 transform transition glow">
+                    <img src="images/2.jpeg" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
+                        <h3 class="text-xl font-semibold text-purple-400">Web binar dari Universitas Digitech</h3>
+                        <p class="text-gray-300 mt-2 text-sm">Membuatan landing page sebagai bagian dari pengembangan web modern. Saya belajar membuat halaman web interaktif dan responsif, dan memahami konsep desain UI/UX agar mampu membuat tampilan web yang menarik dan fungsional.</p>
+                    </div>
+                </div>
+                <div class="glass rounded-3xl overflow-hidden hover:scale-105 transform transition glow">
+                    <img src="images/1.jpeg" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
+                        <h3 class="text-xl font-semibold text-purple-400">PT Fath Force</h3>
+                        <p class="text-gray-300 mt-2 text-sm">Perusahaan ini mengembangkan aplikasi web absensi yang berfungsi untuk mencatat dan memantau kehadiran karyawan secara efisien. Dalam proses pengembangannya, tim menggunakan metode pengembangan perangkat lunak berbasis web.</p>
+                    </div>
+                </div>
+                <div class="glass rounded-3xl overflow-hidden hover:scale-105 transform transition glow">
+                    <img src="images/4.jpg" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
+                        <h3 class="text-xl font-semibold text-purple-400">PT Cikara Studio</h3>
+                        <p class="text-gray-300 mt-2 text-sm">Belajar dan berlatih di bidang Game Development (2D Game).
+                        Mempelajari dasar-dasar pembuatan game 2D menggunakan engine seperti Unity, serta memahami konsep logika permainan, animasi, dan desain interaktif.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="contact" class="min-h-screen flex flex-col justify-center items-center bg-gradient-to-b from-purple-950 to-purple-800 text-white px-6 py-20">
+        <div class="max-w-lg text-center">
+            <h2 class="text-4xl font-bold mb-10 text-purple-300">Hubungi Saya</h2>
+            
+            <!-- Kontak Info -->
+                <div class="glass backdrop-blur-md p-8 rounded-2xl shadow-lg border border-purple-700 mb-10 space-y-4">
+                <p class="text-gray-200">Saya senang berkolaborasi atau menjawab pertanyaan Anda. Bisa hubungi saya melalui media berikut:</p>
+                <div class="flex flex-col space-y-3 text-left">
+                    <p>Alamat: <a href="https://maps.app.goo.gl/6Uyh9FPr12Ji1fJY7" class="text-purple-400 hover:underline">Sandingtaman,Kabupaten Ciamis,Jawa Barat</a></p>
+                    <p>WhatsApp: <a href="https://wa.me/qr/STNGDUQTSTUFP1" class="text-purple-400 hover:underline">+62 821-1811-5751</a></p>
+                    <p>Email: <a href="https://mail.google.com/mail/u/0/?ogbl#inbox" class="text-purple-400 hover:underline">jangindra25@gmail.com</a></p>
+                    <p>Instagram: <a href="https://www.instagram.com/indraa_maulanaa_?igsh=bjhjYm1wZms0Y3dj" target="_blank" class="text-purple-400 hover:underline">indraa_maulanaa_</a></p>
+                    <p>GitHub: <a href="https://github.com/indraaa25" target="_blank" class="text-purple-400 hover:underline">indraaa25</a></p>
+                    <p>LinkedIn: <a href="https://www.linkedin.com/in/indra-maulana-2a560638a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="text-purple-400 hover:underline">Indra Maulana</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="text-center py-10 text-gray-400">
+        <p>&copy; 2025 Indra Maulana.</p>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+        menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+        });
+    </script>
+    </body>
+</html>
